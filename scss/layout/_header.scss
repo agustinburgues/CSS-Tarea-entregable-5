@@ -1,0 +1,78 @@
+@use '../base/variables' as *;
+
+.header {
+    background-color: rgba($color-white, 0.95);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: $shadow-sm;
+    
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        
+        @media (min-width: $bp-tablet) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        
+        img {
+            height: 40px;
+            width: auto;
+        }
+        
+        h1 {
+            font-size: 1.5rem;
+            color: $color-primary;
+            margin: 0;
+            display: none; // Hide on mobile for space
+            
+            @media (min-width: $bp-tablet) {
+                display: block;
+            }
+        }
+    }
+    
+    &__nav {
+        margin-top: 1rem;
+        width: 100%;
+        overflow-x: auto;
+        
+        @media (min-width: $bp-tablet) {
+            margin-top: 0;
+            width: auto;
+            overflow-x: visible;
+        }
+        
+        ul {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            justify-content: center;
+            
+            li {
+                white-space: nowrap;
+            }
+            
+            a {
+                font-weight: 500;
+                color: $color-text;
+                
+                &:hover {
+                    color: $color-secondary;
+                }
+            }
+        }
+    }
+}

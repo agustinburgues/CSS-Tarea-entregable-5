@@ -1,0 +1,39 @@
+@use '../base/variables' as *;
+
+.footer {
+    background-color: $color-primary;
+    color: $color-white;
+    padding: 3rem 1rem 1.5rem;
+    margin-top: 4rem;
+    
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    &__links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        margin-top: 1rem;
+        
+        a {
+            color: rgba($color-white, 0.8);
+            
+            &:hover {
+                color: $color-white;
+                text-decoration: underline;
+            }
+        }
+    }
+    
+    &__copy {
+        margin-top: 2rem;
+        font-size: 0.875rem;
+        color: rgba($color-white, 0.6);
+        border-top: 1px solid rgba($color-white, 0.1);
+        padding-top: 1.5rem;
+    }
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Conquer Academy - Inicio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inicio de Conquer Academy, plataforma educativa con cursos, noticias y recursos para tu desarrollo profesional.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">
+                <img src="img/Conquer-Blocks-logo.avif" alt="Logotipo de Conquer Academy">
+                <h1>Conquer Academy</h1>
+            </a>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="registro.html" class="btn btn--secondary">Registro</a></li>
+                    <li><a href="login.html" class="btn btn--primary">Login</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="hero__container">
+                <h2 class="hero__title">Bienvenido a Conquer Academy</h2>
+                <p class="hero__subtitle">Una plataforma para aprender, mejorar y conquistar tus metas.</p>
+                <img class="hero__img" src="img/home/bienvenido.avif" alt="Estudiantes sonriendo">
+            </div>
+        </section>  
+
+        <section class="section">
+            <div class="about">
+                <div class="about__content">
+                    <h2 class="section__title">¿Quiénes somos?</h2>
+                    <p>Somos una academia enfocada en el desarrollo profesional y educativo.</p>
+                    <a href="quienes-somos.html" class="btn btn--primary">
+                        Leer más
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+                <img class="about__img" src="img/home/quienes-somos.webp" alt="Fundadores de Conquer Academy">
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section__header">
+                <h2 class="section__title">Últimos cursos</h2>
+                <p class="section__subtitle">Descubre los últimos cursos que podrás encontrar en nuestra plataforma</p>
+            </div>
+
+            <div class="grid">
+                <article class="card">
+                    <img class="card__img" src="img/home/curso-1.webp" alt="Estudiante aprendiendo en línea con nuevos cursos">
+                    <div class="card__content">
+                        <h3 class="card__title">Curso de introducción a la Programación</h3>
+                        <p class="card__desc">Aprende desde cero las nociones de la programación.</p>
+                        <div class="card__action">
+                            <a href="cursos/curso1.html" class="btn btn--primary">Ver Curso</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img class="card__img" src="img/home/curso-2.avif" alt="Desarrollo Web">
+                    <div class="card__content">
+                        <h3 class="card__title">Curso de Desarrollo Web Básico</h3>
+                        <p class="card__desc">Aprende los contenidos básicos que contiene toda página web.</p>
+                        <div class="card__action">
+                            <a href="cursos/curso2.html" class="btn btn--primary">Ver Curso</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="section__header" style="margin-top: 2rem;">
+                <p>Si quieres ver todos los cursos haz click <a href="cursos.html" style="color: var(--color-primary); font-weight: 600; text-decoration: underline;">aquí</a></p>
+            </div>
+        </section>
+
+        <section class="section" style="background-color: #ffffff; border-radius: 1rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);">
+            <div class="section__header">
+                <h2 class="section__title">Últimas noticias</h2>
+                <a href="blog.html" class="btn btn--secondary">Ver todas las noticias</a>
+            </div>
+            
+            <div class="grid">
+                <article class="card">
+                    <img class="card__img" src="../img/noticias/noticia-1.webp" alt="Lanzamiento">
+                    <div class="card__content">
+                        <h3 class="card__title"><a href="blog/noticia1.html">Lanzamiento de nuevos cursos</a></h3>
+                        <p class="card__desc">Descubre las últimas novedades y cursos lanzados este mes.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="../img/noticias/noticia-2.webp" alt="Entrevistas">
+                    <div class="card__content">
+                        <h3 class="card__title"><a href="blog/noticia2.html">Entrevistas a exalumnos exitosos</a></h3>
+                        <p class="card__desc">Conoce cómo nuestros exalumnos lograron el éxito.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main> 
+
+    <footer class="footer">
+        <div class="footer__container">
+            <h3>Conquer Academy</h3>
+            <p>Conquistando tus metas paso a paso.</p>
+            <div class="footer__links">
+                <a href="quienes-somos.html">Quiénes somos</a>
+                <a href="cursos.html">Cursos</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="aviso-legal.html">Aviso legal</a>
+            </div>
+            <div class="footer__copy">
+                <p>© 2026 Conquer Academy. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
